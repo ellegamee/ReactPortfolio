@@ -1,6 +1,6 @@
 ![HI](https://github.com/ellegamee/ellegamee.github.io/raw/master/featureimage.png)
 
-# ellegame.github.io
+# ellegamee.github.io
 My own website, with some cool animations, the repository is in Swedish
 
 ## How to run this project
