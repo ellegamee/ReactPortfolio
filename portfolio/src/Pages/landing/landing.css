@@ -10,7 +10,7 @@
     }
 }
 
-.landing-background {
+.landing__background {
     background-image: url('../../Images/BackgroundWave.svg');
     background-position: 75% 0;
     background-size: cover;
