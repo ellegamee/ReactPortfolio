@@ -1,0 +1,48 @@
+:root {
+    --image-height: 30em; 
+    --fs-600: 5rem;
+    --fs-400: 2.5rem;
+}
+
+@media (min-width: 40em) {
+    :root {
+        --image-height: 50em;
+        --fs-600: 10rem;
+        --fs-400: 6rem;
+    }
+}
+
+.landing-background {
+    background-image: url('../../Images/BackgroundWave.svg');
+    background-position: center top;
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.text__wrapper {
+    display: flex;
+    height: 85%;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 10%;
+}
+
+.text__wrapper--intro {
+    font-family: OpenSans;
+    font-size: var(--fs-400);
+}
+
+.text__wrapper--name {
+    font-family: Montserrat;
+    font-size: var(--fs-600);
+}
+
+p {
+    margin: 0;
+}

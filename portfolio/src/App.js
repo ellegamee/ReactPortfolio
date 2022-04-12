@@ -1,6 +1,6 @@
 import React from 'react'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import Landing from './Pages/landing'
+import Landing from './Pages/landing/landing'
 import Header from './Components/Header'
 
 function App() {
