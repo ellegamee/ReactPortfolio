@@ -1,12 +1,10 @@
 :root {
-    --image-height: 30em; 
     --fs-600: 5rem;
     --fs-400: 2.5rem;
 }
 
 @media (min-width: 40em) {
     :root {
-        --image-height: 50em;
         --fs-600: 10rem;
         --fs-400: 6rem;
     }
@@ -14,7 +12,7 @@
 
 .landing-background {
     background-image: url('../../Images/BackgroundWave.svg');
-    background-position: center top;
+    background-position: 75% 0;
     background-size: cover;
 
     position: absolute;
