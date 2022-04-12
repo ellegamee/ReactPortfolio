@@ -3,8 +3,9 @@ import backgroundImage from '../Images/BackgroundWave.svg'
 export default function Landing() {
     const wrapper_div = {
         'background-image': `url(${backgroundImage})`,
+        'background-position': 'center top',
+
         'position': 'absolute',
-        
         'top': '0',
         'bottom': '0',
         'left': '0',
