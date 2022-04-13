@@ -1,18 +1,16 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import { Landing } from './Pages/manager'
-import Header from './Layout/header'
-import './index.css'
+import "./index.css"
 
-const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(
+ReactDOM.render(
     <React.StrictMode>
         <Router>
             <Routes>
                 <Route exact path="/" element={<Landing />} />
-                <Route path="/" element={<Header />} />
             </Routes>
         </Router>
-    </React.StrictMode>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
