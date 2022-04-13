@@ -27,7 +27,7 @@ Google Nest*/
 }
 
 .landing__background {
-    background-image: url('../../Images/BackgroundWave.svg');
+    background-image: url('../../Assets/Images/landing_image.svg');
     background-position: 75% 0;
     background-size: cover;
 

@@ -1,13 +1,13 @@
 @font-face  {
     font-family: 'Montserrat';
-    src: local('Montserrat'), url(./Fonts/Montserrat.ttf) format('truetype');
+    src: local('Montserrat'), url(./Assets/Fonts/Montserrat.ttf) format('truetype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
     'embedded-opentype', and 'svg' */
 }
 
 @font-face  {
     font-family: 'OpenSans';
-    src: local('OpenSans'), url(./Fonts/OpenSans.ttf) format('truetype');
+    src: local('OpenSans'), url(./Assets/Fonts/OpenSans.ttf) format('truetype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
     'embedded-opentype', and 'svg' */
 }

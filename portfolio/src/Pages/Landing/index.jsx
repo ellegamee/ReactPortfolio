@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from 'react-router-dom'
-import "./landing.css"
+import "./index.css"
 
 export default function Landing() {
     const intro_text = "Hello!"
