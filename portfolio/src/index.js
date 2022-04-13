@@ -10,7 +10,7 @@ root.render(
         <Router>
             <Routes>
                 <Route exact path="/" element={<Landing />} />
-                <Route exact path="/Home" element={<Home />} />
+                <Route exact path="/home" element={<Home />} />
             </Routes>
         </Router>
     </React.StrictMode>,
