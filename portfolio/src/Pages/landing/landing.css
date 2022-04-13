@@ -1,9 +1,25 @@
+/* Works good for most sizes
+but not for Galaxy Fold and
+google Nest where font is
+way to big.
+
+TLDR: Font to big:
+Galaxy Fold
+Google Nest*/
+
 :root {
-    --fs-600: 5rem;
+    --fs-600: 3rem;
     --fs-400: 2.5rem;
 }
 
 @media (min-width: 40em) {
+    :root {
+        --fs-600: 6rem;
+        --fs-400: 4rem;
+    }
+}
+
+@media (min-width: 60em) {
     :root {
         --fs-600: 10rem;
         --fs-400: 6rem;
@@ -32,13 +48,43 @@
 }
 
 .text__wrapper--intro {
+    cursor: default;
     font-family: OpenSans;
     font-size: var(--fs-400);
+    color: white;
 }
 
 .text__wrapper--name {
     font-family: Montserrat;
     font-size: var(--fs-600);
+    font-weight: bold;
+    
+    text-decoration: none;
+    color: white;
+
+    padding-right: 10px;
+    width: max-content;
+    position: relative;
+}
+
+.text__wrapper--name::before {
+    content: "";
+    background: white;
+
+    position: absolute;
+    bottom: 6%;
+    left: 0;
+    
+    width: 100%;
+    height: 8%;
+    
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 350ms ease-in-out;
+}
+
+.text__wrapper--name:hover::before {
+    transform: scaleX(1);
 }
 
 p {
