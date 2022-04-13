@@ -8,12 +8,16 @@ Galaxy Fold
 Google Nest*/
 
 :root {
+    --landing-instruction: block;
+    --landing-instruction-font: 1.3rem;
     --fs-600: 3rem;
     --fs-400: 2.5rem;
 }
 
 @media (min-width: 40em) {
     :root {
+        --landing-instruction: block;
+        --landing-instruction-font: 2rem;
         --fs-600: 6rem;
         --fs-400: 4rem;
     }
@@ -21,6 +25,7 @@ Google Nest*/
 
 @media (min-width: 60em) {
     :root {
+        --landing-instruction: none;
         --fs-600: 10rem;
         --fs-400: 6rem;
     }
@@ -85,6 +90,36 @@ Google Nest*/
 
 .text__wrapper--name:hover::before {
     transform: scaleX(1);
+}
+
+.text__wrapper--name::after {
+    content: "→";
+    padding-left: 2%;
+}
+
+.landing__instruction {
+    display: var(--landing-instruction);
+    margin-top: 12%;
+    text-align: center;
+
+    color: black;
+    font-family: OpenSans;
+    font-weight: bold;
+    font-size: var(--landing-instruction-font);
+
+    animation: upDown 3s linear infinite;
+}
+
+@keyframes upDown {
+    from {
+        transform: translate(0, 5px)
+    }
+
+    50% {transform: translate(0, 0)}
+
+    to {
+        transform: translate(0, 5px)
+    }
 }
 
 p {
