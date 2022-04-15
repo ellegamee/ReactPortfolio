@@ -97,29 +97,33 @@ Google Nest*/
     padding-left: 2%;
 }
 
-.landing__instruction {
+.instruction__wrapper {
+    display: flex;
+    height: 15%;
+    width: 100%;
+
+    justify-content: center;
+}
+
+.instruction__wrapper--text {
     display: var(--landing-instruction);
-    margin-top: 12%;
-    text-align: center;
+    height: min-content;
+    margin-top: auto;
+    margin-bottom: 40px;
 
     color: black;
-    font-family: OpenSans;
+    font-family: Montserrat;
     font-weight: bold;
     font-size: var(--landing-instruction-font);
+    font-size: 1.5rem;
 
-    animation: upDown 3s linear infinite;
+    animation: upDown 2s linear infinite;
 }
 
 @keyframes upDown {
-    from {
-        transform: translate(0, 5px)
-    }
-
+    0% {transform: translate(0, 5px)}
     50% {transform: translate(0, 0)}
-
-    to {
-        transform: translate(0, 5px)
-    }
+    100% {transform: translate(0, 5px)}
 }
 
 p {

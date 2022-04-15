@@ -12,7 +12,9 @@ export default function Landing() {
                 <p className="text__wrapper--intro">{intro_text}</p>
                 <Link to="/home" className="text__wrapper--name">{name_text}</Link>
             </div>
-            <p className="landing__instruction">click on portfolio</p>
+            <div className="instruction__wrapper">
+                <p className="instruction__wrapper--text">click on portfolio</p>
+            </div>
         </div>
     )
 }
