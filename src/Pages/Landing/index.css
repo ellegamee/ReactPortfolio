@@ -31,7 +31,7 @@ Google Nest*/
     }
 }
 
-.landing__background {
+.bg {
     background-image: url('../../Assets/Images/landing_image.svg');
     background-position: 75% 0;
     background-size: cover;
@@ -43,7 +43,7 @@ Google Nest*/
     right: 0;
 }
 
-.text__wrapper {
+.text {
     display: flex;
     height: 85%;
     flex-direction: column;
@@ -52,14 +52,14 @@ Google Nest*/
     margin-left: 10%;
 }
 
-.text__wrapper--intro {
+.text__welcome {
     cursor: default;
     font-family: OpenSans;
     font-size: var(--fs-400);
     color: white;
 }
 
-.text__wrapper--name {
+.text__option {
     font-family: Montserrat;
     font-size: var(--fs-600);
     font-weight: bold;
@@ -72,7 +72,7 @@ Google Nest*/
     position: relative;
 }
 
-.text__wrapper--name::before {
+.text__option::before {
     content: "";
     background: white;
 
@@ -88,16 +88,16 @@ Google Nest*/
     transition: all 350ms ease-in-out;
 }
 
-.text__wrapper--name:hover::before {
+.text__option:hover::before {
     transform: scaleX(1);
 }
 
-.text__wrapper--name::after {
+.text__option::after {
     content: "→";
     padding-left: 2%;
 }
 
-.instruction__wrapper {
+.instruction {
     display: flex;
     height: 15%;
     width: 100%;
@@ -105,7 +105,7 @@ Google Nest*/
     justify-content: center;
 }
 
-.instruction__wrapper--text {
+.instruction_text {
     display: var(--landing-instruction);
     height: min-content;
     margin-top: auto;
@@ -115,7 +115,7 @@ Google Nest*/
     font-family: Montserrat;
     font-weight: bold;
     font-size: var(--landing-instruction-font);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
     animation: upDown 2s linear infinite;
 }

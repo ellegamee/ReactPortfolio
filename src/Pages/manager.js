@@ -1,6 +1,6 @@
 import About from "./About/index"
-import Archive from "./Archive/index"
+import Contact from "./Contact/index"
 import Home from "./Home/index"
 import Landing from "./Landing"
 
-export { About, Archive, Home, Landing }
+export { Contact, Home, Landing }
