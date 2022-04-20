@@ -8,11 +8,11 @@ export default function Header() {
 
     const StyledMenu = {
         'display': 'flex',
-        'margin-left': 'auto',
+        'marginLeft': 'auto',
     }
 
     const StyleLinks = {
-        'text-decoration': 'none',
+        'textDecoration': 'none',
         'color': 'black',
         'margin': '15px',
     }

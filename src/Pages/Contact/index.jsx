@@ -1,5 +1,18 @@
+import React from "react"
+import "./index.css"
+
 export default function archive() {
     return(
-        <p>This is the contact page</p>
+        <React.Fragment>
+            <p className="contact_intro">Contact me</p>
+
+            <form className="form">
+                <input type="text" className="form__input" placeholder="First Name" />
+                <input type="text" className="form__input" placeholder="Second Name" />
+                <input type="text" className="form__input" placeholder="Email" />
+                <input type="text" className="form__input" placeholder="Message" />
+                <input type="submit" className="form__submit" value="Send" />
+            </form>
+        </React.Fragment>
     )
 }

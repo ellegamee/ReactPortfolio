@@ -1,0 +1,66 @@
+:root {
+    --contact_info-margin: 60px;
+    --contact_info-size: 2.2rem;
+    
+    --form-width: 85%;
+    --form__input-heigt: 2rem;
+    --form__input-size: 1.2rem;
+    --form__input-margin: 35px;
+    --form__submit-width: 6rem;
+    --form__submit-size: 20px;
+}
+
+.contact_intro {
+    text-align: center;
+    margin-top: var(--contact_info-margin);
+    margin-left: 0px;
+    font-family: Montserrat;
+    font-size: var(--contact_info-size);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: var(--form-width);
+    margin: auto;
+    padding-top: 40px;
+}
+
+.form__input {
+    margin-bottom: var(--form__input-margin);
+    padding: 5px;
+    height: var(--form__input-heigt);
+    font-size: var(--form__input-size);
+    border: 0;
+    border-radius: 2px;
+    padding-left: 5px;
+
+    font-weight: lighter;
+    border-bottom: 1px solid #030303;
+}
+
+.form__input:focus {
+    outline: none;
+}
+
+.form__submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 55px;
+    width: 150px;
+
+    margin-top: 10px;
+    padding: 12px 20px 12px 20px;
+    font-size: var(--form__submit-size);
+    line-height: 1;
+
+    /* Linear gradient border */
+    background: none;
+    border-radius: 14px;
+    border: 5px solid transparent;
+    background: 
+        linear-gradient(white, white) padding-box, 
+        linear-gradient(135deg, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 100%) border-box;
+}
