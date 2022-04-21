@@ -1,5 +1,5 @@
 :root {
-    --contact_info-margin: 60px;
+    --contact_info-margin: 15%;
     --contact_info-size: 2.2rem;
     
     --form-width: 85%;
@@ -12,8 +12,7 @@
 
 .contact_intro {
     text-align: center;
-    margin-top: var(--contact_info-margin);
-    margin-left: 0px;
+    margin-bottom: var(--contact_info-margin);
     font-family: Montserrat;
     font-size: var(--contact_info-size);
 }
@@ -21,6 +20,8 @@
 .form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 200px);
     width: var(--form-width);
     margin: auto;
     padding-top: 40px;
@@ -52,7 +53,6 @@
     margin-top: 10px;
     padding: 12px 20px 12px 20px;
     font-size: var(--form__submit-size);
-    line-height: 1;
 
     /* Linear gradient border */
     background: none;
