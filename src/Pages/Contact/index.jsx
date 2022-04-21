@@ -7,8 +7,7 @@ export default function archive() {
             <p className="contact_intro">Contact me</p>
 
             <form className="form">
-                <input type="text" className="form__input" placeholder="First Name" />
-                <input type="text" className="form__input" placeholder="Second Name" />
+                <input type="text" className="form__input" placeholder="Full Name" />
                 <input type="text" className="form__input" placeholder="Email" />
                 <input type="text" className="form__input" placeholder="Message" />
                 <input type="submit" className="form__submit" value="Send" />
