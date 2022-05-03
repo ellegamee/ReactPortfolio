@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    margin-left: auto;
+}
+
+.links {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-family: Montserrat;
+    color: black;
+    margin: 1em;
+}
