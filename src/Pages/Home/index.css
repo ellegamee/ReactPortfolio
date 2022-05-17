@@ -8,10 +8,15 @@ body {
     padding: 0;
 }
 
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
 .swiper-slide {
-    text-align: center;
+    width: 200px !important;
     font-size: 40px;
-    background: #fff;
+    background: white;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -26,4 +31,17 @@ body {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev { 
+    color: #000 !important;
+    fill: black !important;
+    stroke: black !important;
+}
+
+.swiper-slide-active,
+.swiper-slide-duplicate-active {
+    width: 600px !important;
+    background-color:  beige !important;
 }

@@ -3,28 +3,38 @@ import "./index.css"
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-import "swiper/css";
-import 'swiper/css/navigation'
-
+import "swiper/css/bundle";
 import { Navigation, Keyboard } from 'swiper';
 
 export default function Home() {
     return (
         <div>
             <Swiper
-                style={{ width: '100%', height: '100vh' }}
+                className="mySwiper"
+                style={{ height: '100vh' }}
                 modules={[Navigation, Keyboard]}
-                slidesPerView={4}
                 centeredSlides={true}
+                slidesPerView="auto"
                 keyboard={{
                     enable: true, 
                     onlyInViewport: false
                 }}
                 navigation={true}
+                rewind={true}
+                slideToClickedSlide={true}
+                initialSlide={3}
+                mousewheel={true}
+                onSlideChangeTransitionStart={(swiper) => {
+                    swiper.update()
+                }}
             >
-                <SwiperSlide className='swiper-slide'>Slide 1</SwiperSlide>
-                <SwiperSlide className='swiper-slide'>Slide 2</SwiperSlide>
-                <SwiperSlide className='swiper-slide'>Slide 3</SwiperSlide>
+                <SwiperSlide className='swiper-slide'>1</SwiperSlide>
+                <SwiperSlide className='swiper-slide'>2</SwiperSlide>
+                <SwiperSlide className='swiper-slide'>3</SwiperSlide>
+                <SwiperSlide className='swiper-slide'>4</SwiperSlide>
+                <SwiperSlide className='swiper-slide'>5</SwiperSlide>
+                <SwiperSlide className='swiper-slide'>6</SwiperSlide>
+                <SwiperSlide className='swiper-slide'>7</SwiperSlide>
             </Swiper>
         </div>
     )
