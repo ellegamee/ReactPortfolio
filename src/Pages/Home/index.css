@@ -25,9 +25,7 @@ body {
     left: -400px;
 }
 
-.swiper-slide-active > div{
-    display: block !important;
-}
+
 
 .swiper-slide-active > img {
     filter: none !important;
@@ -74,4 +72,40 @@ body {
 
 .swiper-slide-active{
     width: 600px !important;
+}
+
+.swiper-slide-active > div{
+    display: block !important;
+    font-family: Montserrat;
+}
+
+.swiper-slide-active > div > h2 {
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: absolute;
+}
+
+.swiper-slide-active > div > .github_link {
+    filter: invert(1);
+
+    position: absolute;
+    top: 2%;
+    right: 3%;
+}
+
+.swiper-slide-active > div > .desc {
+    position: absolute;
+    bottom: 6%;
+    left: 4%;
+    width: 550px;
+}
+
+.swiper-slide-active > div > .method {
+    position: absolute;
+    bottom: 2%;
+    left: 4%;
+    
+    font-size: x-large;
+    font-style: italic;
 }
