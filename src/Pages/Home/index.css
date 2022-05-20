@@ -11,12 +11,32 @@ body {
 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
+
+.swiper-slide-active > .projekt1 {
+    display: block;
+}
+
+.swiper-slide-active > .projekt4 {
+    left: -50% !important;
+}
+
+.swiper-slide > .projekt4 {
+    left: -400px;
+}
+
+.swiper-slide-active > div{
+    display: block !important;
+}
+
+.swiper-slide-active > img {
+    filter: none !important;
+}
 
 .swiper-slide {
     width: 200px !important;
     font-size: 40px;
-    background: white;
+    background-color: #EAE9E4;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -33,6 +53,18 @@ body {
     align-items: center;
 }
 
+.swiper-slide > div {
+    display: none;
+}
+
+.swiper-slide > img {
+    filter: grayscale(1) opacity(40%) blur(1.5px);
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .swiper-button-next,
 .swiper-button-prev { 
     color: #000 !important;
@@ -40,8 +72,6 @@ body {
     stroke: black !important;
 }
 
-.swiper-slide-active,
-.swiper-slide-duplicate-active {
+.swiper-slide-active{
     width: 600px !important;
-    background-color:  beige !important;
 }
