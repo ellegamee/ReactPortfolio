@@ -1,11 +1,11 @@
 import React from 'react';
 import "./index.css"
 
-import { Link } from 'react-router-dom';
-
 import "swiper/css/bundle";
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Keyboard } from 'swiper';
+
+import Header from "../../Layout/Header/index"
 
 import sudoku from '../../Assets/Images/sudoku.jpg'
 import taskmanager from '../../Assets/Images/taskmanager.png'
@@ -15,7 +15,8 @@ import github from '../../Assets/Images/GitHub-Mark/PNG/GitHub-Mark-Light-64px.p
 
 export default function Home() {
     return (
-        <div>
+        <React.Fragment>
+            <Header />
             <Swiper
                 className="mySwiper"
                 style={{ height: '100vh' }}
@@ -52,7 +53,7 @@ export default function Home() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='swiper-slide'>
-                    <img src={taskmanager} alt="" style={{height: "100%", left: "25%"}}/>
+                    <img src={taskmanager} alt="" style={{height: "60%", left: "25%", top: "20%"}}/>
                     <div>
                         <h2 style={{top: "20%", left: "-35%"}}>Taskmanager</h2>
                         <a 
@@ -100,6 +101,6 @@ export default function Home() {
                     </div>
                 </SwiperSlide>
             </Swiper>
-        </div>
+        </React.Fragment>
     )
 }

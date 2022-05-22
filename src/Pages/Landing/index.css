@@ -54,7 +54,7 @@ Google Nest*/
 
 .text__welcome {
     cursor: default;
-    font-family: OpenSans;
+    font-family: Montserrat;
     font-size: var(--fs-400);
     color: white;
 }

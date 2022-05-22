@@ -9,7 +9,7 @@ export default function Header() {
             <Link to='/home' className="links"><GrHomeRounded /></Link>
             
             <div className="menu">
-                <Link to='/archive' className="links">About</Link>
+                {/*<Link to='/archive' className="links">About</Link>*/}
                 <Link to='/contact' className="links">Contact</Link>
             </div>
         </div>
