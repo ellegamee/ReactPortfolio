@@ -45,7 +45,7 @@ export default function Home() {
                         target="_blank" 
                         rel="noopener noreferrer"
                         style={{filter: "none"}}
-                        >                        
+                        >                
                             <img src={github} alt=""/>
                         </a>
                         <p className='desc'>Sudoku game with board generating</p>
@@ -96,7 +96,7 @@ export default function Home() {
                         >                        
                             <img src={github} alt=""/>
                         </a>
-                        <p className='desc'>Simple chat bot with easy expandability if needed</p>
+                        <p className='desc'>A chat bot with expandable code</p>
                         <p className='method'>Python, Bot, CLI</p>
                     </div>
                 </SwiperSlide>

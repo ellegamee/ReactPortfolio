@@ -84,8 +84,13 @@ body {
 }
 
 .swiper-slide-active > div{
-    display: block !important;
+    display: grid;
     font-family: Montserrat;
+    height: 100%;
+    grid-template-rows: 1fr min-content min-content min-content;
+    grid-gap: 1rem;
+
+    box-shadow: inset 0 0 10px gray;
 }
 
 .swiper-slide-active > div > h2 {
@@ -97,24 +102,21 @@ body {
 
 .swiper-slide-active > div > .github_link {
     filter: invert(1);
-
-    position: absolute;
-    top: 2%;
-    right: 3%;
+    width: 64px;
+    height: 64px;
+    grid-row-start: 2;
+    margin-left: 1rem;
 }
 
 .swiper-slide-active > div > .desc {
-    position: absolute;
-    bottom: 6%;
-    left: 4%;
-    width: 550px;
+    grid-row-start: 3;
+    margin-left: 1rem;
 }
 
 .swiper-slide-active > div > .method {
-    position: absolute;
-    bottom: 2%;
-    left: 4%;
-    
     font-size: x-large;
     font-style: italic;
+    grid-row-start: 4;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
