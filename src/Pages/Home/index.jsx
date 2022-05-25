@@ -36,7 +36,7 @@ export default function Home() {
                 }}
             >
                 <SwiperSlide className='swiper-slide'>
-                    <img src={sudoku} alt="" className="projekt1" style={{height: "100%"}}/>
+                    <img src={sudoku} alt="" className="projekt1" style={{height: "100%", maxWidth: "800px", minWidth: "600px"}}/>
                     <div style={{color: 'white'}}>
                         <h2 style={{top: "26%", left: "-45%"}}>Gymnasiearbete</h2>
                         <a 
