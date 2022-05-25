@@ -1,16 +1,59 @@
 .header {
     display: flex;
+    justify-content: flex-end;
 }
 
 .menu {
-    display: flex;
+    display: none;
     margin-left: auto;
 }
 
 .links {
+    display: none;
     text-decoration: none;
     font-size: 1.25rem;
     font-family: Montserrat;
     color: black;
     margin: 1rem;
+}
+
+.burger_menu {
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+}
+
+.burger_menu > hr {
+    width: 2.3em;
+    height: 4px;
+    background-color: gray;
+    border: none;
+    border-radius: 2px;
+
+    transition: transform .5s ease-in-out;
+}
+
+.active_cross1 {
+    transform: rotate(-45deg) translate(-8px, 9px);
+}
+
+.active_cross2 {
+    transform: rotate(45deg);
+}
+
+.active_cross3 {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+@media (min-width:40em) {
+    .menu {
+        display: flex;
+    }
+
+    .links {
+        display: block;
+    }
+
+    .burger_menu {
+        display: none;
+    }
 }
