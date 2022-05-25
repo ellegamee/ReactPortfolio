@@ -91,13 +91,18 @@ body {
     grid-gap: 1rem;
 
     box-shadow: inset 0 0 10px gray;
+    position: relative;
 }
 
 .swiper-slide-active > div > h2 {
-    transform: rotate(-90deg);
-    text-transform: uppercase;
-    letter-spacing: 4px;
     position: absolute;
+    top: 1rem;
+    left: 0;
+    margin: 0;
+
+    writing-mode:vertical-lr;
+    transform:scale(-1);
+    text-transform: uppercase;
 }
 
 .swiper-slide-active > div > .github_link {
@@ -128,6 +133,11 @@ body {
 
     .swiper-slide-active > div {
         grid-gap: 0.5rem;
+        width: 100vw;
+    }
+
+    .swiper-slide-active > div > h2 {
+        font-size: 2.8rem;
     }
 
     .swiper-slide-active > div > .desc {
