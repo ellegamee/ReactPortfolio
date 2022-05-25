@@ -3,7 +3,7 @@
     justify-content: flex-end;
 }
 
-.menu {
+.link_wrapper {
     display: none;
     margin-left: auto;
 }
@@ -22,6 +22,26 @@
     padding-right: 1rem;
 }
 
+.burger_menu > div {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(to right, #EAE9E4, #EAE9E4);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 0 100%;
+    transition: background-size 1s ease-in-out;
+}
+
+.active_menu {
+    background-size: 100% 100% !important;
+}
+
 .burger_menu > hr {
     width: 2.3em;
     height: 4px;
@@ -29,7 +49,7 @@
     border: none;
     border-radius: 2px;
 
-    transition: transform .5s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 .active_cross1 {
