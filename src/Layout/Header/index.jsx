@@ -9,21 +9,23 @@ export default function Header() {
     const [cross2, setCross2] = useState("")
     const [cross3, setCross3] = useState("")
     const [menu, setMenu] = useState("menu")
+    const [menuLinks, setMenuLinks] = useState("menu_link")
+
 
     function toggle_burger_menu() {
-        console.log("menu clicked")
-
         if (cross1 === "active_cross1") {
             setCross1("")
             setCross2("")
             setCross3("")
             setMenu("")
+            setMenuLinks("menu_link")
 
         } else {
             setCross1("active_cross1")
             setCross2("active_cross2")
             setCross3("active_cross3")
             setMenu("active_menu")
+            setMenuLinks("menu_link menu_link_active")
         }
     }
 
@@ -37,7 +39,10 @@ export default function Header() {
             </div>
 
             <div className="burger_menu" onClick={toggle_burger_menu}>
-                <div className={menu} />
+                <div className={menu}>
+                    <Link to='/contact' className={menuLinks}>Contact</Link>
+                    <Link to='/contact' className={menuLinks}>About</Link>
+                </div>
                 <hr className={cross1}></hr>
                 <hr className={cross2}></hr>
                 <hr className={cross3}></hr>
