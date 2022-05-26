@@ -74,7 +74,7 @@ export default function Home() {
                         <h2>Hangman</h2>
                         <a 
                         className="github_link" 
-                        href="https://github.com/ellegamee/GymnasieArbete-2021" 
+                        href="https://github.com/ellegamee/Hangman" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         >                        
