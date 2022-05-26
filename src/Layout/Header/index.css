@@ -125,7 +125,7 @@
     }
 
     .link_wrapper {
-        display: block;
+        display: flex;
     }
 
     .burger_menu {

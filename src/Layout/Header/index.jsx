@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { GrHomeRounded } from 'react-icons/gr'
-import { HiOutlineMenuAlt3 } from 'react-icons/hi'
 import './index.css'
 
 export default function Header() {
@@ -34,14 +33,14 @@ export default function Header() {
             <Link to='/home' className="links"><GrHomeRounded /></Link>
             
             <div className="link_wrapper">
-                {/*<Link to='/archive' className="links">About</Link>*/}
+                <Link to='/about' className="links">About</Link>
                 <Link to='/contact' className="links">Contact</Link>
             </div>
 
             <div className="burger_menu" onClick={toggle_burger_menu}>
                 <div className={menu}>
+                    <Link to='/about' className={menuLinks}>About</Link>
                     <Link to='/contact' className={menuLinks}>Contact</Link>
-                    <Link to='/contact' className={menuLinks}>About</Link>
                 </div>
                 <hr className={cross1}></hr>
                 <hr className={cross2}></hr>

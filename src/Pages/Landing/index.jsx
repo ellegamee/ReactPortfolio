@@ -8,6 +8,7 @@ export default function Landing() {
             <div className="text">
                 <p className="text__welcome">Hello!</p>
                 <Link to="/home" className="text__option">Portfolio</Link>
+                <Link to="/about" className="text__option">About</Link>
                 <Link to="/contact" className="text__option">Contact</Link>
             </div>
             <div className="instruction">
