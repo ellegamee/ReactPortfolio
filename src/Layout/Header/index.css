@@ -1,16 +1,134 @@
 .header {
     display: flex;
+    justify-content: flex-end;
 }
 
-.menu {
-    display: flex;
+.link_wrapper {
+    display: none;
     margin-left: auto;
 }
 
 .links {
+    display: none;
     text-decoration: none;
     font-size: 1.25rem;
     font-family: Montserrat;
     color: black;
     margin: 1rem;
+}
+
+.burger_menu {
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+}
+
+.burger_menu > div {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(to right, #EAE9E4, #EAE9E4);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 0 100%;
+    transition: background-size 1s ease-in-out;
+
+    display: grid;
+    grid-template-rows: 15% min-content min-content;
+    grid-gap: 1.5rem;
+
+    text-align: center;
+}
+
+.active_menu {
+    background-size: 100% 100% !important;
+}
+
+.burger_menu > hr {
+    width: 2.3em;
+    height: 4px;
+    background-color: gray;
+    border: none;
+    border-radius: 2px;
+
+    transition: transform 1s ease-in-out;
+}
+
+.menu_link {
+    opacity: 0;
+    pointer-events: visible;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: Montserrat;
+    color: black;
+
+    animation: fadeOut ease-in-out 0.5s backwards;
+}
+
+.menu_link_active {
+    display: block;
+    opacity: 0;
+
+    animation: fadeIn ease-in-out 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+       opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+       opacity: 0;
+    }
+}
+
+.menu_link:nth-child(1) {
+    grid-row-start: 2;
+}
+
+.menu_link:nth-child(2) {
+    grid-row-start: 3;
+}
+
+.active_cross1 {
+    transform: rotate(-45deg) translate(-8px, 9px);
+}
+
+.active_cross2 {
+    transform: rotate(45deg);
+}
+
+.active_cross3 {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+@media (min-width:40em) {
+    .menu {
+        display: flex;
+    }
+
+    .links {
+        display: flex;
+    }
+
+    .link_wrapper {
+        display: flex;
+    }
+
+    .burger_menu {
+        display: none;
+    }
 }

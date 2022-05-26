@@ -1,5 +1,12 @@
-export default function about() {
+import "./index.css"
+
+export default function about() { 
     return(
-        <p>This is the about page</p>
+        <div className="wrapper">
+            <p className="info__text">Under construction</p>
+            <div className="loader">
+                <div className="white_out"></div>
+            </div>
+        </div>
     )
 }
