@@ -103,6 +103,10 @@
     grid-row-start: 3;
 }
 
+.menu_link:nth-child(3) {
+    grid-row-start: 4;
+}
+
 .active_cross1 {
     transform: rotate(-45deg) translate(-8px, 9px);
 }

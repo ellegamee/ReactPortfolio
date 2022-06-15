@@ -39,7 +39,8 @@ export default function Header() {
 
             <div className="burger_menu" onClick={toggle_burger_menu}>
                 <div className={menu}>
-                    <Link to='/about' className={menuLinks}>About</Link>
+                    <Link Link to='/home' className={menuLinks}>Home</Link> 
+                    <Link Link to='/about' className={menuLinks}>About</Link>
                     <Link to='/contact' className={menuLinks}>Contact</Link>
                 </div>
                 <hr className={cross1}></hr>
